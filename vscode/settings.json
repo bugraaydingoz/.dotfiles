@@ -1,0 +1,17 @@
+{
+	"workbench.colorTheme": "One Monokai",
+	"workbench.iconTheme": "vscode-icons",
+	"breadcrumbs.enabled": true,
+	"editor.minimap.enabled": false,
+	"workbench.statusBar.feedback.visible": false,
+	"[javascript]": {
+		"editor.tabSize": 2
+	},
+	"editor.formatOnSave": true,
+	"prettier.useTabs": true,
+	"prettier.singleQuote": true,
+	"prettier.semi": false,
+	"editor.fontFamily": "Roboto Mono, Menlo, Monaco, 'Courier New', monospace",
+	"editor.lineHeight": 19
+}
+
