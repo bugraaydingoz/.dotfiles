@@ -20,7 +20,7 @@ if [ "$(uname)" == "Darwin" ]; then
   omf install robbyrussell
 
   # Symlink .vimrc files
-  stow vim
+  stow vim tmux fish
 
   # TODO: Automate
   echo "Install fonts/RobotoMono-Regular.ttf"
@@ -46,7 +46,7 @@ elif [ "$(expr substr $uname -s) 1 5" ] == "Linux" ]; then
   omf install robbyrussell
 
   # Symlink .vimrc files
-  stow vim
+  stow vim tmux fish
 
 fi
 
