@@ -12,6 +12,7 @@ if [ "$(uname)" == "Darwin" ]; then
   brew install fish
   brew install vim --HEAD
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  brew install ctags
   brew install tmux
   brew install stow
 
