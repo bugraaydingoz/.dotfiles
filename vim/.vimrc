@@ -37,7 +37,9 @@ Plugin 'Markdown'
 Plugin 'kien/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'tomasr/molokai'
-Plugin 'terryma/vim-multiple-cursor'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'posva/vim-vue'
+Plugin 'leafgarland/typescript-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
