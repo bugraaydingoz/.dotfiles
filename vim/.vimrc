@@ -50,13 +50,16 @@ colorscheme molokai
 " Map keys
 let mapleader=","
 
-map <F6> :TagbarToggle <CR>
+map <leader>n :TagbarToggle <CR>
 map <leader>b :NERDTreeToggle <CR>
 
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+" Tagbar
+let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 
 " NERDTree
 let NERDTreeShowHidden=1
