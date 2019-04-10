@@ -10,14 +10,16 @@ if [ "$(uname)" == "Darwin" ]; then
 
   # Install brew packages
   brew install fish
-  brew install vim --with-override-system-vi
+  brew install vim --HEAD
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
   brew install tmux
   brew install stow
 
   # Change default shell to fish
+  echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
   chsh -s /usr/local/bin/fish
   curl -L https://get.oh-my.fish | fish
-  omf install robbyrussell
+  omf install eden
 
   # Symlink .vimrc files
   stow vim tmux fish
@@ -37,13 +39,15 @@ elif [ "$(expr substr $uname -s) 1 5" ] == "Linux" ]; then
   sudo apt install -y git
   sudo apt install -y fish
   sudo apt install -y vim
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
   sudo apt install -y tmux
   sudo apt install -y stow
 
   # Change default shell to fish
+  echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
   chsh -s /usr/local/bin/fish
   curl -L https://get.oh-my.fish | fish
-  omf install robbyrussell
+  omf install eden
 
   # Symlink .vimrc files
   stow vim tmux fish
