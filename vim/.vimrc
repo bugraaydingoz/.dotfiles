@@ -60,6 +60,7 @@ map <leader>n :TagbarToggle <CR>
 map <leader>b :NERDTreeToggle <CR>
 map <leader>p :Prettier <CR>
 map <leader>/ :Commentary <CR>
+map <leader>f :Ack! 
 
 noremap <Up> <NOP>
 noremap <Down> <NOP>
