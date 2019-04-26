@@ -45,6 +45,7 @@ Plugin 'nanotech/jellybeans.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'prettier/vim-prettier'
 Plugin 'tpope/vim-commentary'
+Plugin 'mileszs/ack.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -74,6 +75,12 @@ nnoremap <C-l> <C-w>l
 nnoremap x "_x
 nnoremap c "_c
 
+" ack
+" Install ag: brew install the_silver_searcher
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
 " airline
 let g:airline#extensions#tabline#enabled = 1
 
@@ -83,7 +90,6 @@ let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 " NERDTree
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.vim$', '\~$', '\.git$', '.DS_Store']
-
 
 " CTRL P
 let g:ctrlp_custom_ignore='coverage\|dist\|dist-*\|node_modules\|DS_Store\|git'
