@@ -40,12 +40,14 @@ Plugin 'tomasr/molokai'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'posva/vim-vue'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'vim-airline/vim-airline'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 filetype indent on
 syntax enable
-colorscheme molokai
+colorscheme jellybeans
 
 " Map keys
 let mapleader=","
@@ -62,6 +64,10 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" airline
+let g:airline#extensions#tabline#enabled = 1
+
 
 " Tagbar
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'
