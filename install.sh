@@ -29,7 +29,7 @@ if [ "$(uname)" == "Darwin" ]; then
   echo "Install fonts/RobotoMono-Regular.ttf"
   echo "Add osx/Dracula.terminal to your terminal theme."
 
-elif [ "$(expr substr $uname -s) 1 5" ] == "Linux" ]; then
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 
   # Upgrade the system
   sudo -v
