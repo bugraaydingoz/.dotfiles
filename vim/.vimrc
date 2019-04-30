@@ -103,3 +103,7 @@ let g:ctrlp_prompt_mappings={
 
 autocmd BufWritePre *.js %s/\s\+$//e
 autocmd BufWritePost .vimrc,_vimrc source $MYVIMRC
+
+
+" Change folder for swapfiles
+:set directory=$HOME/.vim/swapfiles//
