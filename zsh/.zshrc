@@ -1,6 +1,7 @@
 # PATH
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh:$PATH
+export PATH=$HOME/.cargo/bin/cargo:$PATH
 
 ZSH_THEME="cloud"
 plugins=(git zsh-syntax-highlighting)
