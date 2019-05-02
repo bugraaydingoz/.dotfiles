@@ -16,4 +16,4 @@ export EDITOR='vim'
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 # alias add_to_path="echo -n 'export PATH=~/bin:$PATH' >> ~/.zshrc"
-alias load_zsh="source /Users/bugra/.zshrc"
+alias load_zsh="source $HOME/.zshrc"
