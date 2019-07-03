@@ -1,17 +1,41 @@
 {
-	"workbench.colorTheme": "One Monokai",
-	"workbench.iconTheme": "vscode-icons",
-	"breadcrumbs.enabled": true,
-	"editor.minimap.enabled": false,
-	"workbench.statusBar.feedback.visible": false,
-	"[javascript]": {
-		"editor.tabSize": 2
-	},
-	"editor.formatOnSave": true,
-	"prettier.useTabs": true,
-	"prettier.singleQuote": true,
-	"prettier.semi": false,
-	"editor.fontFamily": "Roboto Mono, Menlo, Monaco, 'Courier New', monospace",
-	"editor.lineHeight": 19
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "Fira Code, Roboto Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": true,
+  "editor.tabCompletion": "on",
+  "prettier.useTabs": true,
+  "prettier.tabWidth": 2,
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "editor.lineHeight": 19,
+  "editor.renderLineHighlight": "all",
+  "editor.formatOnSave": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": "#181A1F",
+  "vim.statusBarColors.insert": "#2A4B66",
+  "vim.statusBarColors.visualblock": "#4D284C",
+  "vim.statusBarColors.visualline": "#4D284C",
+  "javascript.referencesCodeLens.enabled": true,
+  "typescript.implementationsCodeLens.enabled": true,
+  "terminal.external.osxExec": "iTerm2.app",
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/node_modules/**": true
+  },
+  "git.autofetch": true,
+  "typescript.referencesCodeLens.enabled": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "workbench.colorTheme": "Plastic - deprioritised punctuation",
+  "workbench.activityBar.visible": false,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#4D284C",
+    "statusBar.noFolderBackground": "#4D284C",
+    "statusBar.debuggingBackground": "#4D284C"
+  }
 }
-
