@@ -62,6 +62,7 @@ map <leader>p :Prettier <CR>
 map <leader>/ :Commentary <CR>
 map <leader>f :Ack! 
 
+" Movements
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
@@ -71,6 +72,14 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+nnoremap j gj
+nnoremap k gk
+
+nnoremap J 7j
+nnoremap K 7k
+inoremap <C-l> <C-o>A
+
 
 " Prevent x and c from overriding system register
 nnoremap x "_x
