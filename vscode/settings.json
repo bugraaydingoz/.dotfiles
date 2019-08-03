@@ -1,41 +1,151 @@
 {
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.fontFamily": "Fira Code, Roboto Mono, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontLigatures": true,
-  "editor.minimap.enabled": false,
-  "breadcrumbs.enabled": true,
-  "editor.tabCompletion": "on",
-  "prettier.useTabs": true,
-  "prettier.tabWidth": 2,
-  "prettier.singleQuote": true,
-  "prettier.semi": false,
-  "editor.lineHeight": 19,
-  "editor.renderLineHighlight": "all",
-  "editor.formatOnSave": true,
-  "workbench.startupEditor": "newUntitledFile",
-  "vim.statusBarColorControl": true,
-  "vim.statusBarColors.normal": "#181A1F",
-  "vim.statusBarColors.insert": "#2A4B66",
-  "vim.statusBarColors.visualblock": "#4D284C",
-  "vim.statusBarColors.visualline": "#4D284C",
-  "javascript.referencesCodeLens.enabled": true,
-  "typescript.implementationsCodeLens.enabled": true,
-  "terminal.external.osxExec": "iTerm2.app",
-  "files.watcherExclude": {
-    "**/.git/objects/**": true,
-    "**/node_modules/**": true
-  },
-  "git.autofetch": true,
-  "typescript.referencesCodeLens.enabled": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
-  },
-  "workbench.colorTheme": "Plastic - deprioritised punctuation",
-  "workbench.activityBar.visible": false,
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#4D284C",
-    "statusBar.noFolderBackground": "#4D284C",
-    "statusBar.debuggingBackground": "#4D284C"
-  }
+	"workbench.iconTheme": "material-icon-theme",
+	"editor.fontFamily": "Fira Code, Roboto Mono, Menlo, Monaco, 'Courier New', monospace",
+	"editor.fontLigatures": true,
+	"editor.minimap.enabled": false,
+	"breadcrumbs.enabled": true,
+	"editor.tabCompletion": "on",
+	"prettier.useTabs": true,
+	"prettier.tabWidth": 2,
+	"prettier.singleQuote": true,
+	"prettier.semi": false,
+	"editor.lineHeight": 19,
+	"editor.renderLineHighlight": "all",
+	"editor.formatOnSave": true,
+	"workbench.startupEditor": "newUntitledFile",
+	"vim.statusBarColorControl": true,
+	"vim.statusBarColors.normal": "#181A1F",
+	"vim.statusBarColors.insert": "#2A4B66",
+	"vim.statusBarColors.visualblock": "#4D284C",
+	"vim.statusBarColors.visualline": "#4D284C",
+	"vim.leader": ",",
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"J"
+			],
+			"after": [
+				"7",
+				"j"
+			]
+		},
+		{
+			"before": [
+				"K"
+			],
+			"after": [
+				"7",
+				"k"
+			]
+		},
+		{
+			"before": [
+				"<C-h>"
+			],
+			"after": [
+				"<C-w>",
+				"h"
+			]
+		},
+		{
+			"before": [
+				"<C-j>"
+			],
+			"after": [
+				"<C-w>",
+				"j"
+			]
+		},
+		{
+			"before": [
+				"<C-k>"
+			],
+			"after": [
+				"<C-w>",
+				"k"
+			]
+		},
+		{
+			"before": [
+				"<C-l>"
+			],
+			"after": [
+				"<C-w>",
+				"l"
+			]
+		},
+		{
+			"before": [
+				"<Leader>",
+				"t",
+				"t"
+			],
+			"commands": [
+				":tabnew"
+			]
+		},
+		{
+			"before": [
+				"<C-n>"
+			],
+			"commands": [
+				":tabnext"
+			]
+		},
+		{
+			"before": [
+				"<C-b>"
+			],
+			"commands": [
+				":tabprevious"
+			]
+		},
+		{
+			"before": [
+				"<Leader>",
+				"t",
+				"o"
+			],
+			"commands": [
+				":tabo"
+			]
+		}
+	],
+	"vim.insertModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"<C-l>"
+			],
+			"after": [
+				"<C-o>",
+				"A"
+			]
+		}
+	],
+	"javascript.referencesCodeLens.enabled": true,
+	"typescript.implementationsCodeLens.enabled": true,
+	"terminal.external.osxExec": "iTerm2.app",
+	"files.watcherExclude": {
+		"**/.git/objects/**": true,
+		"**/node_modules/**": true
+	},
+	"git.autofetch": true,
+	"typescript.referencesCodeLens.enabled": false,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.python"
+	},
+	"workbench.colorTheme": "Plastic - deprioritised punctuation",
+	"workbench.activityBar.visible": false,
+	"workbench.colorCustomizations": {
+		"statusBar.background": "#4D284C",
+		"statusBar.noFolderBackground": "#4D284C",
+		"statusBar.debuggingBackground": "#4D284C"
+	},
+	"gitlens.hovers.currentLine.over": "line",
+	"workbench.sideBar.location": "left",
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"window.zoomLevel": 0
 }
