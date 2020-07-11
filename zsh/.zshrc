@@ -5,7 +5,11 @@ export ZSH=$HOME/.oh-my-zsh
 
 export GOPATH="$HOME/go"
 export FLUTTER_PATH="$HOME/Code/flutter"
-export PATH=$PATH:$GOPATH/bin:$FLUTTER_PATH/bin
+export NVM_DIR="$HOME/.nvm"
+  # [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+
+export PATH=$PATH:$GOPATH/bin:$FLUTTER_PATH/bin:NVM_DIR
+
 
  ZSH_THEME="cloud"
 plugins=(git)
@@ -22,6 +26,8 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 # alias add_to_path="echo -n 'export PATH=~/bin:$PATH' >> ~/.zshrc"
 alias load_zsh="source $HOME/.zshrc"
+alias load_nvm='[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"'
+
 # if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -20,6 +20,7 @@ set notimeout
 set ttimeout
 set ttimeoutlen=10
 set clipboard^=unnamed
+set t_Co=256
 
 filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
