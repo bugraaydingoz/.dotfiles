@@ -9,7 +9,7 @@ if [ "$(uname)" == "Darwin" ]; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
   # Install brew packages
-  brew install fish
+  # brew install fish
   brew install vim --HEAD
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
   brew install ctags
@@ -17,17 +17,17 @@ if [ "$(uname)" == "Darwin" ]; then
   brew install stow
 
   # Change default shell to fish
-  echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
-  chsh -s /usr/local/bin/fish
-  curl -L https://get.oh-my.fish | fish
-  omf install eden
+  # echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
+  # chsh -s /usr/local/bin/fish
+  # curl -L https://get.oh-my.fish | fish
+  # omf install eden
 
   # Symlink .vimrc files
-  stow vim tmux fish
+  stow vim tmux
 
   # TODO: Automate
-  echo "Install fonts/RobotoMono-Regular.ttf"
-  echo "Add osx/Dracula.terminal to your terminal theme."
+  # echo "Install fonts/RobotoMono-Regular.ttf"
+  # echo "Add osx/Dracula.terminal to your terminal theme."
 
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 

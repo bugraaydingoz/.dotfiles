@@ -116,4 +116,4 @@ autocmd BufWritePost .vimrc,_vimrc source $MYVIMRC
 
 
 " Change folder for swapfiles
-:set directory=$HOME/.vim/swapfiles//
+:set directory=$HOME/.vim/swapfiles/
